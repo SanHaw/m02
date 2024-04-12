@@ -139,7 +139,7 @@ const assignDesignation = () => {
                 <div className="col-start-3 col-end-7 border border-blue-300 rounded-md px-4 py-2 text-blue-800">
                     <select name="employee_type" value={formData.employee_type} onChange={handleChange}
                         className={`w-full focus:outline-none focus:border-none ${
-                            formData.status ? 'text-blue-800' : 'text-gray-400'
+                            formData.employee_type ? 'text-blue-800' : 'text-gray-400'
                         }`}>
                             <option value="" disabled hidden>Select Employee Type</option>
                             <option value="Regular"     className="text-blue-800">Regular</option>
@@ -149,7 +149,7 @@ const assignDesignation = () => {
                             <option value="Remote"      className="text-blue-800">Remote</option>
                             <option value="Contractual" className="text-blue-800">Contractual</option>
                     </select>
-                </div>
+                </div> 
 
 
 
